@@ -20,3 +20,11 @@ data("gapminder_unfiltered")
 gapminder_unfiltered
 ```
 
+# Plot
+```{r}
+library(tidyverse)
+gapminder_unfiltered %>%
+  ggplot(aes(x = year, y = lifeExp))+
+  geom_point()
+```
+
