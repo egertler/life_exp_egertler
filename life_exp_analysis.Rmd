@@ -31,7 +31,13 @@ gapminder_unfiltered %>%
 
 Calculate Maximum
 ```{r}
-
+gapminder %>%
+  select(year, country, lifeExp) %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  arrange(year) %>%
+  ungroup() ->
+  maxdf
 ```
 
 
