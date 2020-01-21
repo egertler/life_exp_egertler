@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Here, we will examine the famous relationship between time and life expectancy as observed by Oeppen and Vaupel (2002)
 
 # Analysis
+
 Loads the data
 ```{r}
 library(gapminder)
@@ -27,4 +28,13 @@ gapminder_unfiltered %>%
   ggplot(aes(x = year, y = lifeExp))+
   geom_point()
 ```
+
+Calculate Maximum
+```{r}
+
+```
+
+
+
+
 
